@@ -1,4 +1,8 @@
 package com.br.enotas.prof.dto;
 
-public class NotaCreateDTO {
+public record NotaCreateDTO(
+        Double valor,
+        String disciplina,
+        Long alunoId
+) {
 }
