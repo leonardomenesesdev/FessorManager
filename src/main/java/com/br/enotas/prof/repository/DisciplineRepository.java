@@ -8,7 +8,6 @@ import java.util.Optional;
 
 @Repository
 public interface DisciplineRepository extends JpaRepository<Discipline, Long> {
-    Optional<Discipline> findByNome(String nome);
     boolean existsByNome(String nome);
 
 }
